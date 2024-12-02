@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#depoimento">Depoimento</a></li>
+                <li><a href="#forms">Formulário</a></li>
+              
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <h1>Empoderando jovens com educação gratuita</h1>
+        <p>Conectando conhecimento e habilidades para mudar vidas</p>
+        <p>Nesta página, você encontrará projetos que refletem meu
+           crescimento na área de TI e meu propósito de impacto social.
+            Cada iniciativa foi criada para solucionar problemas reais e explorar novas possibilidades.</p>
+        
+    </section>
+
+    <section class="projects" id="projetos">
+  
+        <div class="project">
+          <h2>Plataforma de Cursos</h2>
+          <p>Acesse conhecimento e prepare-se para o mercado de trabalho, sem custos. <br>
+            Oportunidades para quem busca conhecimento na carreira de tecnologia</p>
+          <img src="Captura de tela 2024-12-01 134840.png" alt="Plataforma de Cursos">
+
+          <p>Sabemos que o acesso à educação de qualidade é um dos maiores desafios enfrentados pelos jovens de baixa renda. 
+            Pensando nisso, estou criando uma plataforma online, totalmente gratuita, com cursos em diversas áreas de
+            tecnologia, comunicação 
+            e desenvolvimento pessoal.</p>
+            <p> Minha missão é através da educação, dar a você as ferramentas necessárias para
+            transformar sua vida e 
+            conquistar um futuro melhor.
+          </p>
+         
+          <p class="formatted-text" style="white-space: pre-line;">
+            Cursos organizados por categoria
+            Vídeos, apostilas, atividades ou aulas ao vivo
+            Um espaço de perguntas e respostas ou mentoria
+            Processo de seleção para acessar os cursos
+            Se possível, emissão de certificados ao final dos cursos.
+          </p>
+        </div>
+      
+    
+        <div class="project">
+            <h2>Mapa de Habilidades</h2>
+            <p>Descubra seu potencial  planeje seu futuro <br>      
+            Esta sera uma ferramenta para te ajudar a identificar suas competências,
+               planejar o desenvolvimento pessoal e alinhar com objetivos profissionais</p>
+          
+              <img src="Captura de tela 2024-11-24 221032.png" alt="Mapa de Habilidades">
+              <p>O Mapa de Habilidades funciona como uma ferramenta de autodiagnóstico, mapeando suas habilidades e
+                ajudando a identificar quais habilidades já foram desenvolvidas, quais precisam ser aprimoradas 
+                e como construir um caminho para o crescimento pessoal ou profissional.</p>
+                <p>
+                   Será um guia para o desenvolvimento contínuo. 
+                   ajudando a te preparar para os desafios do mercado de trabalho, especialmente para aqueles 
+                  que querem indentificar suas competencias e planejar os estudos </p>
+
+                  <p class="formatted-text" style="white-space: pre-line;">
+                    Usuário responde a um questionário de autoconhecimento
+                    Sistema identifica habilidades existentes e áreas de interesse
+                    Recomendações personalizadas de cursos, workshops ou atividades práticas
+                    Acompanhamento do progresso.
+
+                  </p>
+              
+        </div>
+    </section>
+    
+      <section class="feedback-container" id="depoimento">
+        <div class="depoimento">
+          <img src="Captura de tela 2024-11-29 234021.png" alt="Foto da pessoa" class="foto-redonda">
+          <div class="detalhes">
+            <h3>Julia Silva</h3>
+            <p>"A plataforma vai me ajudar muito! Vou consegui aprender novas habilidades e encontrar oportunidades incríveis."</p>
+          </div>
+        </div>
+        
+        <div class="mensagem">
+          <h3 class="mensagem-titulo">Seu feedback é muito importante para <br>continuarmos evoluindo!</h3>
+            
+          <div class="mensagem-detalhes">
+            <p>Esses projetos visam não apenas desenvolver habilidades técnicas,<br> mas também capacitar jovens a conquistarem autonomia e melhores <br>
+              oportunidades de trabalho, contribuindo para <br>a redução da desigualdade social</p>
+          
+          </div>
+      </div>
+        
+        <form class="formulario">
+          <h3>Deixe seu feedback:</h3>
+          <textarea id="feedback" name="feedback" placeholder="Escreva seu feedback aqui..." rows="4" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <section class="form-container" id="forms">
+        <div class="feedback-container">
+            <div class="form-container">
+              <h3>Formulário de Feedback</h3>
+              <form class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+          
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+          
+                <div class="opcoes">
+                  
+                  <input type="radio" id="mentor" name="status" value="aluno">
+                  <label for="mentor">Usar Plataformas</label>
+                  
+                  <input type="radio" id="nao-mentor" name="status" value="mentor">
+                  <label for="nao-mentor">Mentor/Colaborador</label>
+                </div>
+          
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+            <div class="sobre-mim">
+              <div class="foto-e-descricao">
+                <img src="Captura de tela 2024-12-01 131512.png" alt="Minha foto" class="foto-redonda">
+                <div class="detalhes">
+                  <h3>Sobre Mim</h3>
+                  <p>
+                    Olá, meu nome é Paloma Matos.
+                    Sou estudante de Gestão de TI e estagiária no Itaú,
+                     sempre em busca de aprendizado e crescimento. Acredito que a educação transforma vidas,
+                      e por isso estou criando um projeto para ajudar jovens a se prepararem 
+                      para o mercado de trabalho, oferecendo oportunidades gratuitas de desenvolvimento.</div>
+              </div>
+              <div class="foto-e-descricao">
+                <img src="Captura de tela 2024-12-01 212742.png" alt="Outra imagem" class="foto-quadrada">
+               
+                <div class="detalhes">
+                  <h3>Minha Jornada</h3>
+                  <p>
+                    Minha trajetória na tecnologia começou com a graduação em Gestão de TI,
+                     um passo decisivo que abriu portas para o mundo do desenvolvimento de software.
+                      Foi nesse universo que me encontrei, descobrindo uma paixão por resolver problemas
+                       e criar soluções digitais. Ao longo do caminho, enfrentei desafios que me tornaram
+                        mais forte e determinada. Hoje, estou focada em usar tudo o que estou aprendendo para ajudar 
+                        outras pessoas que também estão trilhando essa jornada, mostrando que, com determinação
+                         e acesso ao conhecimento, 
+                    é possível transformar sonhos em realidade.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+          
+  
+    <footer>
+      <div class="footer-content" id="contato">
+        <div class="footer-message">
+          <p>Essas iniciativas estão em fase de desenvolvimento. Seja parte dessa jornada!</p>
+        </div>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/PalomaMatos" target="_blank"><img src="icon-linkedin.png" alt="LinkedIn"></a>
+          <a href="mailto:palomamatos686@gmail.com"><img src="icon-gmail.png" alt="Email"></a>
+          <a href="https://github.com/Palomamatos" target="_blank"><img src="icon-github.png" alt="GitHub"></a>
+        </div>
+      </div>
+    </footer>
+    
+    
+      
+      
+    
+</body>
+</html>

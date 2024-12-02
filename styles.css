@@ -1,0 +1,376 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 70px; /* Espaço para o menu fixo */
+  background-color: #311850;
+}
+
+/* Estilo do menu */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #221720;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgb(255, 255, 255);
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+  gap: 50px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #202024;
+}
+
+/* Seção de destaque (hero) */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color:#ceabeb;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color:  #190028;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color:  #190028;
+  margin-top: 10px;
+}
+
+/* Seção de projetos */
+/* Seção de projetos */
+.projects {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem linha */
+  justify-content: center; /* Centraliza os itens */
+  gap: 20px; /* Espaçamento entre os projetos */
+  padding: 40px 20px;
+  background-color: #48215c;
+}
+
+.project {
+  flex: 0 1 590px; /* Permite que o item expanda até um limite de largura */
+  max-width: 590px; /* Limita a largura máxima */
+  background-color: #612159;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.966);
+  padding: 20px;
+  text-align: center; /* Centraliza o conteúdo por padrão */
+  position: relative;
+}
+
+.project img {
+  width: 100%; 
+  height: 380px; /* Ajuste a altura conforme necessário */
+  object-fit: contain; /* Mantém a proporção da imagem dentro do espaço */
+  border-radius: 5px;
+  margin-bottom: 15px;
+  
+}
+.project h2 {
+  font-size: 1.5em;
+  color: #fff8ff;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1em;
+  /*color: #8D8D99;*/
+  color:#f8f8f8;
+  line-height: 1.5;
+}
+
+/* Parágrafo formatado para quebra de linha e alinhamento à esquerda */
+.formatted-text {
+  text-align: left; /* Alinha à esquerda apenas este parágrafo */
+  white-space: pre-line; /* Respeita quebras de linha no conteúdo */
+  margin-top: 15px; /* Adiciona um pequeno espaçamento superior */
+  color: #3c373d; /* Cor para maior legibilidade */
+  font-size: 1em; /* Mantém a consistência do tamanho da fonte */
+}
+
+/* Posicionamento dos textos nas bordas */
+
+
+
+
+
+/* Seção de um único depoimento */
+.depoimento-unico {
+  display: flex; /* Organiza os elementos do depoimento lado a lado */
+  justify-content: center; /* Centraliza o depoimento na página */
+  padding: 40px 20px; /* Espaçamento interno */
+  
+}
+
+.depoimento {
+  display: flex; /* Coloca a foto e o texto lado a lado */
+  align-items: center; /* Alinha os elementos verticalmente */
+  gap: 15px; /* Espaçamento entre a foto e o texto */
+  background-color: #3b0425; /* Fundo branco */
+  padding: 15px; /* Espaçamento interno */
+  border: 1px solid #f1ebeb; /* Borda leve */
+  border-radius: 10px; /* Arredondamento das bordas */
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.966); /* Sombra leve */
+}
+
+.foto-redonda {
+  width: 70px; /* Largura da foto */
+  height: 70px; /* Altura da foto */
+  border-radius: 50%; /* Faz a foto ficar redonda */
+  object-fit: cover; /* Ajusta o conteúdo da imagem */
+}
+
+.detalhes h3 {
+  font-size: 1.2em; /* Tamanho do nome */
+  color: #525151; /* Cor do texto */
+  margin: 0; /* Remove margens padrão*/
+}
+
+.detalhes p {
+  font-size: 0.9em; /* Tamanho do texto */
+  color: #000000; /* Cor do texto */
+  margin: 5px 0 0 0; /* Margem superior pequena */
+}
+/* Container que envolve o depoimento, a mensagem e o formulário */
+.feedback-container {
+  display: flex; /* Flexbox para alinhar os itens lado a lado */
+  gap: 20px; /* Espaçamento entre os itens */
+  justify-content: space-between; /* Espaço entre as colunas */
+  padding: 20px; /* Espaçamento interno */
+  
+ 
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.966); /* Sombra leve */
+
+}
+
+/* Estilos do depoimento */
+.depoimento {
+  display: flex; /* Organiza a foto e o texto ao lado */
+  gap: 10px; /* Espaço entre a foto e o texto */
+  flex: 1; /* Mantém tamanho fixo */
+}
+
+.foto-redonda {
+  width: 60px; /* Largura da foto */
+  height: 60px; /* Altura da foto */
+  border-radius: 50%; /* Faz a foto ficar redonda */
+  object-fit: cover; /* Ajusta o conteúdo da imagem */
+}
+
+.detalhes h3 {
+  font-size: 1.2em; /* Tamanho do nome */
+  color: #333; /* Cor do texto */
+  margin: 0; /* Remove margens padrão */
+}
+
+.detalhes p {
+  font-size: 0.9em; /* Tamanho do texto */
+  color: #2c2c2c; /* Cor do texto */
+  margin: 5px 0 0 0; /* Margem superior pequena */
+}
+.mensagem-titulo {
+  color: #000000; /* Cor um pouco mais clara */
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.2em; /* Destaca o título da mensagem */
+  font-weight: bold; 
+  /* Torna o título mais visível */
+}
+
+/* Estiliza os detalhes da mensagem */
+.mensagem-detalhes {
+   /* Menor do que o título */
+  color: #0f0303; /* Cor ainda mais clara */
+  text-align: center; /* Centraliza o texto */
+  font-size: 1em; /
+   
+}
+/* Estilos do formulário */
+
+/* Container que envolve o formulário e as informações sobre você */
+.feedback-container {
+  display: flex; /* Flexbox para alinhar os itens lado a lado */
+  gap: 20px; /* Espaçamento entre os itens */
+  justify-content: space-between; /* Espaço entre as colunas */
+  padding: 20px; /* Espaçamento interno */
+  background-color:#ab63c5; /* Cor de fundo */
+
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.966); /* Sombra leve */
+  flex: 20%;
+}
+
+
+/* Estilos do formulário */
+.form-container {
+  flex: 1; /* Faz o formulário ocupar 50% do espaço */
+  background-color: #612159;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.966);
+}
+
+.form-container h3 {
+  font-size: 1.3em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1.5; 
+}
+
+.formulario label {
+  font-size: 1.1em;
+  color: #000000;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #46006e;
+  border-radius: 5px;
+}
+
+
+.formulario .opcoes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.formulario input[type="radio"] {
+  margin-left: 5px;
+}
+
+.formulario button {
+  padding: 10px;
+  font-size: 1.1em;
+  background-color: #32043d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #4a0068;
+}
+
+/* Estilos para a seção "Sobre Mim" */
+.sobre-mim {
+  flex: 2; /* Faz a seção sobre você ocupar o dobro de espaço em relação ao formulário */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaço entre as informações */
+}
+
+.foto-e-descricao {
+  display: flex;
+  gap: 15px; /* Espaço entre a foto e o texto */
+  align-items: center; /* Alinha os itens verticalmente */
+  background-color: #861057;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.966);
+}
+
+.foto-redonda {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; /* Foto redonda */
+  object-fit: cover;
+}
+.foto-quadrada{
+ 
+    width: 80px; /* Tamanho pequeno */
+    height: 80px;
+    border-radius: 0%; /* Mantém a foto quadrada */
+    object-fit: cover;
+}
+
+.detalhes h3 {
+  font-size: 1.2em;
+  color: #fffefe;
+}
+
+.detalhes p {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+
+/* Estilos do rodapé */
+footer {
+  background-color:#11001c; /* Cor de fundo suave */
+  padding: 20px 0; /* Espaçamento interno */
+  border-top: 1px solid #ddd; /* Linha divisória no topo */
+}
+
+.footer-content {
+  display: flex; /* Flexbox para alinhar os itens lado a lado */
+  justify-content: space-between; /* Espaço entre os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  max-width: 1200px; /* Largura máxima do rodapé */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0 20px; /* Espaçamento das laterais */
+}
+
+.icons {
+  display: flex; /* Alinha os ícones em linha */
+  gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.icons img {
+  width: 30px; /* Tamanho dos ícones */
+  height: 30px; /* Tamanho dos ícones */
+  transition: transform 0.3s ease; /* Efeito de transição para os ícones */
+}
+
+.icons a {
+  display: inline-block;
+}
+
+.icons img:hover {
+  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+.footer-message {
+  font-size: 1.2em; /* Tamanho do texto */
+  color: #ffffff; /* Cor do texto */
+  max-width: 700px; /* Limita a largura do texto */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.footer-message p {
+  margin: 0; /* Remove margens padrão */
+}
